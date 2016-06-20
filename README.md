@@ -1,5 +1,3 @@
-
-
 # QML Asset Exporter from Photoshop
 
 The templates used here are based on PNGExpress (http://www.pngexpress.com)
@@ -27,7 +25,8 @@ The resulting document can be used with the QtQuick Designer to further adjust
 the different user interface objects. This is a great tool for fast prototying
 and bringing a static PSD document to live.
 
-TODO: Update the existing templates TODO: Port the existing example
+* TODO: Update the existing templates
+* TODO: Port the existing example
 
 
 ## QML Asset Template
@@ -35,14 +34,15 @@ TODO: Update the existing templates TODO: Port the existing example
 Each tagged graphics or text asset will be exported as own QML document to be
 usable inside your project.
 
-TODO: Support visual content adjustment TODO: Support BorderImage support
+* TODO: Support visual content adjustment
+* TODO: Support BorderImage support
 
 ## QML Asset Catalog Template
 
 A document will be generated to be browsable by the developer to inform
 themself on individual assets names and diemension.
 
-TODO: Write the export template TODO: Write AssetCatalog tool to load the
-asset catalog.
+* TODO: Write the export template
+* TODO: Write AssetCatalog tool to load the asset catalog.
 
 
