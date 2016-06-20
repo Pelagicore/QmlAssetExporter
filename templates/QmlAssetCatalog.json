@@ -1,0 +1,71 @@
+{
+    "document" : {
+        "name": "{{document.name}}",
+        "width": {{document.width}},
+        "height": {{document.height}},
+    },
+    "export": {
+        "date":"{{export.date}}",
+        "path":"{{export.path}}",
+        "designResolution":{{export.designResolution}},
+        "specScaling":{{export.specScaling}},
+        "assetCount":{{export.assetCount}},
+        "fileCount":{{export.fileCount}}
+    },
+    "assets": [{{assets}}
+        {
+            "assetName":"{{assetName}}",
+            "format":"{{format}}",
+            "x":{{x}},
+            "y":{{y}},
+            "width":{{width}},
+            "height":{{height}},
+            "zIndex":{{zIndex}},
+            "visible":{{visible}},
+            "opacity":{{opacity}},
+            "count":{{count}},
+            "versions":[{{versions}}
+                {
+                    "assetName":"{{assetName}}",
+                    "varName":"{{varName}}",
+                    "stateName":"{{stateName}}",
+                    "file":"{{file}}",
+                    "path":"{{path}}",
+                    "specificPath":"{{specificPath}}",
+                    "fullPath":"{{fullPath}}",
+                    "path-@2x":"{{path-@2x}}",
+                    "fullPath-@2x":"{{fullPath-@2x}}",
+                    "x":{{x}},
+                    "y":{{y}},
+                    "width":{{width}},
+                    "height":{{height}},
+                    "visible":{{visible}},
+                    "opacity":{{opacity}}
+                }{{if #|last|falsy}},{{/if}}{{/versions}}
+            ]
+        }{{if #|last|falsy}},{{/if}}{{/assets}}
+    ],
+    "texts": [{{texts}}
+        {
+            "name":"{{name}}",
+            "content":"{{content}}",
+            "kind":"{{kind}}",
+            "x":{{x}},
+            "y":{{y}},
+            "x-raw":{{x-raw}},
+            "y-raw":{{y-raw}},
+            "width":{{width}},
+            "height":{{height}},
+            "font":"{{font}}",
+            "fontSize":{{fontSize}},
+            "fontColorHex":"{{fontColorHex}}",
+            "underline":{{underline}},
+            "justification":"{{justification}}",
+            "letterSpacing":"{{letterSpacing}}",
+            "lineHeight":"{{lineHeight}}",
+            "zIndex":{{zIndex}},
+            "visible":{{visible}},
+            "opacity":"{{opacity}}"
+        }{{if #|last|falsy}},{{/if}}{{/texts}}
+    ]
+}
