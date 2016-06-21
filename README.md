@@ -92,6 +92,22 @@ FocusScope {
 ```
 
 
+You can use now the UI Form inside your own QtQuick document and modify individual properties.
+
+```js
+import QtQuick 2.4
+
+import "assets"
+
+InstrumentCluster {
+    dial_frame.opacity: 0.5
+    kmh.text = "miles"
+}
+```
+
+The next time the designer adjust the geometry of the scene, as a develop you mainly have to re-export the assets.
+
+
 ## QML Asset Template
 
 Each tagged graphics or text asset will be exported as own QML document to be
