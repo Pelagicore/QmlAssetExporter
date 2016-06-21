@@ -30,7 +30,7 @@ and bringing a static PSD document to live.
 ![dial frame in qt creator](qtcreator_dial_frame.png "Dial Frame inside QtCreator QtQuick Designer")
 
 ```js
-
+// assets/InstrumentCluster.ui.qml
 import QtQuick 2.4
 
 FocusScope {
@@ -95,6 +95,7 @@ FocusScope {
 You can use now the UI Form inside your own QtQuick document and modify individual properties.
 
 ```js
+// main.qml
 import QtQuick 2.4
 
 import "assets"
