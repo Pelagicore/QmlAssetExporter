@@ -27,8 +27,7 @@ The resulting document can be used with the QtQuick Designer to further adjust
 the different user interface objects. This is a great tool for fast prototyping
 and bringing a static PSD document to live.
 
-* TODO: Update the existing templates
-* TODO: Port the existing example
+![dial frame in qt creator](qtcreator_dial_frame.png "Dial Frame inside QtCreator QtQuick Designer")
 
 ```js
 
@@ -110,6 +109,7 @@ Image {
 }
 ```
 
+* TODO: Fix the naming of QML Files to be more better readable
 * TODO: Support visual content adjustment
 * TODO: Support BorderImage support
 
