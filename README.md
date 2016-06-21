@@ -8,6 +8,10 @@ formatted using a template language. For more information on the individual
 features and the template syntax, please read the PNGExporess excellent user
 guide (http://www.pngexpress.com/support.html).
 
+## Install
+
+See the separate installation documentation.
+
 ## Templates
 
 The templates presented allows the user to export information from the
