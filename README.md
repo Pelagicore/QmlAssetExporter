@@ -21,12 +21,76 @@ file name is based on the PSD document name. Graphics as also
 Text objects are exported with absolute positioning. Text object are
 exported with font and alignment information.
 
+![dial frame](dial_frame.png "Dial Frame from InstrumentCluster.PSD")
+
 The resulting document can be used with the QtQuick Designer to further adjust
 the different user interface objects. This is a great tool for fast prototyping
 and bringing a static PSD document to live.
 
 * TODO: Update the existing templates
 * TODO: Port the existing example
+
+```js
+
+import QtQuick 2.4
+
+FocusScope {
+    id: root
+    width: 1691
+    height: 1440
+
+    property alias background : background
+    property alias dial_frame : dial_frame
+    ...
+
+    property alias dial_number_0: dial_number_0
+    ...
+    property alias kmh: kmh
+
+
+    Image {
+        id: background
+        x: 0
+        y: 0
+        width: 1691
+        height: 1440
+        source: "background.png"
+        z: 0
+        visible: true
+        opacity: 100/100
+    }
+
+    Image {
+        id: dial_frame
+        ...
+    }
+
+    Text {
+        id: dial_number_0
+        text: "0"
+        x: 387
+        y: 943
+        width: 141
+        height: 69
+        font.family: "Source Sans Pro Light"
+        font.pixelSize: 72
+        color: "#FFFFFF"
+        z: 22
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+        visible: true
+        opacity: 100/100
+        font.letterSpacing: +3.6
+
+    }
+
+    Text {
+        id: kmh
+        text: "km/h"
+        ...
+    }
+}
+```
 
 
 ## QML Asset Template
