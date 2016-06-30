@@ -33,7 +33,7 @@ Text {
     width: {{width}}
     height: {{height}}
     font.family: "{{font}}"
-    font.pixelSize: {{fontSize}}
+    font.pixelSize: {{fontSize|round}}
     color: "{{fontColorHex}}"
     z: {{zIndex}}
     {{if justification|equals>Center align}}horizontalAlignment: Text.AlignHCenter{{/if}}
